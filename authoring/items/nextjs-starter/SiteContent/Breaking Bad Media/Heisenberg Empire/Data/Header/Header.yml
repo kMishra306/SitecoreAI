@@ -1,0 +1,67 @@
+﻿---
+ID: "8683e9a5-3259-4947-9d76-86f88dcf9cfb"
+Parent: "d5e995f3-2779-4c1c-b5c0-e46df1ca9f27"
+Template: "8662f319-8498-4878-a9e7-97a65766ec60"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Header/Header
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-200"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a298f012-6d09-420e-95d9-4c5e1e49dc0c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e9c6e3a-f772-41b6-8ed9-7f1b91d2681b"
+      Hint: burnnoticelabel
+      Value: Activate Burn Notice
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T151254Z
+    - ID: "27669fc6-ef50-4097-98a5-ba28f314a5e9"
+      Hint: burnnoticelink
+      Value: |
+        <link text="Activate Burn Notice" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E2BA7651-461C-4ABD-8080-C5E87EF9142A}" />
+    - ID: "2a2f3a64-9e37-4106-97bc-180acbbd022b"
+      Hint: globalpurity
+      Value: 99.1% Pure
+    - ID: "423edf5a-b7dd-4232-9738-792ce8079a90"
+      Hint: operationalcapacity
+      Value: 78
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0da7ceb6-ae01-4265-bfe5-a8b4581b86f9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "c6e4c4fd-93b8-4c37-aa8b-4bfeeb96a53f"
+      Hint: threatlevel
+      Value: Medium
+    - ID: "d98aae9a-fe73-493a-9111-7bb1f6289dd9"
+      Hint: securityalertmessage
+      Value: Southwest corridor under observation. Vamonos Pest units on standby.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T153306Z
+    - ID: "e83a2c6a-4259-4205-8626-0950291da0b9"
+      Hint: navlinks
+      Value: |
+        {B9A5DE50-49B9-439E-A336-BDD35702A972}
+        {17E67FB8-BC43-4788-992D-BA3AE4E157D4}
+        {40678F45-2446-482B-8D81-9CED714390A3}
+        {F6AE3A3A-8089-44C9-90EE-AD7FA718B98C}
+    - ID: "f88ce808-7a8e-48c3-85b3-035e05023d37"
+      Hint: logotext
+      Value: "[He]isenberg [Em]pire"

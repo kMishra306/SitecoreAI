@@ -1,0 +1,38 @@
+﻿---
+ID: "40678f45-2446-482b-8d81-9ced714390a3"
+Parent: "044beeb8-b985-4826-8575-4f63babf09e1"
+Template: "0e80b1b7-d8fb-4bc0-be2f-b28f5acdb63b"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Header/Nav Link/Lab Operations
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T151158Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "550ea561-7272-4364-896d-47031dd3c234"
+      Hint: navlabel
+      Value: Lab Operations
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6eed39d9-8798-4e12-b5d5-a4bfe560c5e5"
+    - ID: "af8430d7-0190-4be5-8fba-7d2f2cddc539"
+      Hint: navlink
+      Value: |
+        <link text="Roster" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E2BA7651-461C-4ABD-8080-C5E87EF9142A}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T151823Z

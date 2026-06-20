@@ -25,6 +25,32 @@ class MultisitePlugin implements ConfigPlugin {
       console.error(error);
     }
 
+    if (!sites.length) {
+      const envSites = process.env.SITES;
+      if (envSites) {
+        try {
+          sites = JSON.parse(envSites) as SiteInfo[];
+        } catch {
+          console.error(chalk.red('SITES environment variable is not valid JSON.'));
+        }
+      }
+    }
+
+    if (!sites.length && config.sitecoreSiteName) {
+      sites = [
+        {
+          name: config.sitecoreSiteName,
+          hostName: '*',
+          language: config.defaultLanguage || 'en',
+        },
+      ];
+      console.log(
+        chalk.yellow(
+          `Using fallback site configuration for "${config.sitecoreSiteName}" (GraphQL site query unavailable).`
+        )
+      );
+    }
+
     return Object.assign({}, config, {
       sites: JSON.stringify(sites),
     });

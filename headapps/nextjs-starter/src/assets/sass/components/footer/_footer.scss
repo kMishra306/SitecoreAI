@@ -1,0 +1,219 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+/**
+ * Footer block — Breaking Bad / Heisenberg Empire
+ * BEM root: .footer-block
+ */
+.footer-block {
+  width: 100%;
+  background-color: $footer-bg;
+  color: $footer-text;
+  border-top: 1px solid $footer-border;
+  margin-top: auto;
+
+  > .component-content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(32px, 4vw, 56px) clamp(16px, 3vw, 32px) clamp(24px, 3vw, 40px);
+
+    @include respond-to(tablet) {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @include respond-to(mobile-large) {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  }
+
+  &__brand {
+    min-width: 0;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    @include font-size(1.8);
+  }
+
+  &__logo-fallback {
+    font-weight: 700;
+    color: $footer-text;
+    @include font-size(1.8);
+  }
+
+  &__logo-text {
+    color: $footer-text;
+    margin: 0 1px;
+  }
+
+  &__element {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2em;
+    height: 2em;
+    margin: 0 2px;
+    padding: 2px 4px;
+    background: $footer-element-bg;
+    border: 2px solid $footer-element-border;
+    border-radius: 2px;
+  }
+
+  &__element-symbol {
+    color: $footer-text;
+    font-weight: 700;
+    line-height: 1;
+    @include font-size(1.2);
+  }
+
+  &__tagline {
+    margin: 12px 0 0;
+    color: $footer-muted;
+    line-height: 1.5;
+    @include font-size(1.3);
+  }
+
+  &__links-title,
+  &__compliance-title,
+  &__contact-label {
+    margin: 0 0 12px;
+    color: $footer-accent;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    @include font-size(1.1);
+  }
+
+  &__links-list,
+  &__social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__links-link {
+    color: $footer-muted;
+    text-decoration: none;
+    transition: color 0.15s ease;
+    @include font-size(1.3);
+
+    &:hover,
+    &:focus {
+      color: $footer-text;
+      text-decoration: none;
+    }
+  }
+
+  &__compliance-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__compliance-dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background: $footer-border;
+  }
+
+  &__compliance--low .footer-block__compliance-dot {
+    background: $footer-border;
+    box-shadow: 0 0 6px rgba($footer-border, 0.7);
+  }
+
+  &__compliance--medium .footer-block__compliance-dot {
+    background: $footer-caution;
+    box-shadow: 0 0 6px rgba($footer-caution, 0.7);
+  }
+
+  &__compliance--high .footer-block__compliance-dot {
+    background: $footer-danger;
+    box-shadow: 0 0 6px rgba($footer-danger, 0.8);
+  }
+
+  &__compliance-message {
+    margin: 0;
+    color: $footer-muted;
+    line-height: 1.5;
+    @include font-size(1.2);
+  }
+
+  &__contact-email,
+  &__contact-phone {
+    margin: 0 0 6px;
+    color: $footer-text;
+    line-height: 1.4;
+    @include font-size(1.3);
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  &__social-link {
+    display: inline-block;
+    padding: 4px 10px;
+    color: $footer-muted;
+    border: 1px solid $footer-border-muted;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    @include font-size(1.2);
+
+    &:hover,
+    &:focus {
+      color: $footer-text;
+      border-color: $footer-border;
+      background: rgba($footer-border, 0.1);
+      text-decoration: none;
+    }
+  }
+
+  &__bottom {
+    padding: 16px clamp(16px, 3vw, 32px) clamp(24px, 3vw, 32px);
+    border-top: 1px solid $footer-border-muted;
+  }
+
+  &__copyright {
+    margin: 0 0 10px;
+    color: $footer-muted;
+    @include font-size(1.2);
+  }
+
+  &__disclaimer {
+    margin: 0;
+    color: $footer-muted;
+    line-height: 1.6;
+    white-space: pre-line;
+    @include font-size(1.1);
+
+    p {
+      margin: 0;
+    }
+  }
+}

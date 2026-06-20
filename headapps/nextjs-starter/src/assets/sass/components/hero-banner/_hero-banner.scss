@@ -8,8 +8,19 @@
  * legacy `.hero-banner` rules in assets/basic/_component.scss.
  */
 .hero-banner-block {
-  width: 100%;
   margin: 0;
+  // Break out of centered containers / column padding for edge-to-edge hero
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  &.component {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  overflow-x: clip;
 
   > .component-content {
     width: 100%;
