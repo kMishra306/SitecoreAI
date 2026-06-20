@@ -90,14 +90,14 @@
   &__media {
     position: relative;
     width: 100%;
-    height: clamp(160px, 18vw, 220px);
-    max-height: 220px;
+    height: clamp(320px, 36vw, 440px);
+    max-height: 440px;
     background-color: $character-roster-media-bg;
     overflow: hidden;
 
     @include respond-to(mobile-large) {
-      height: clamp(150px, 38vw, 200px);
-      max-height: 200px;
+      height: clamp(300px, 76vw, 400px);
+      max-height: 400px;
     }
   }
 

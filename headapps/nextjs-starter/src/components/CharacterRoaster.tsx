@@ -101,7 +101,7 @@ const getWideImageField = (imageField?: ImageField): ImageField | undefined => {
   try {
     const url = new URL(imageField.value.src);
     url.searchParams.set('w', '640');
-    url.searchParams.set('h', '360');
+    url.searchParams.set('h', '720');
 
     return {
       ...imageField,
@@ -134,14 +134,23 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
     return <></>;
   }
 
-  const rootClassName = ['component', 'character-roster-block', styleParams].filter(Boolean).join(' ');
+  const rootClassName = ['component', 'character-roster-block', styleParams]
+    .filter(Boolean)
+    .join(' ');
 
   return (
-    <section className={rootClassName} id={renderingId || undefined} aria-labelledby="character-roster-heading">
+    <section
+      className={rootClassName}
+      id={renderingId || undefined}
+      aria-labelledby="character-roster-heading"
+    >
       <div className="component-content">
         <div className="character-roster-block__inner">
           {headingField && (
-            <h2 id="character-roster-heading" className="character-roster-block__heading field-heading">
+            <h2
+              id="character-roster-heading"
+              className="character-roster-block__heading field-heading"
+            >
               <Text field={headingField} />
             </h2>
           )}
@@ -174,7 +183,10 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
                         {imageField ? (
                           <JssImage field={imageField} className="character-roster-block__image" />
                         ) : (
-                          <div className="character-roster-block__image-placeholder" aria-hidden="true" />
+                          <div
+                            className="character-roster-block__image-placeholder"
+                            aria-hidden="true"
+                          />
                         )}
                       </div>
 
@@ -191,7 +203,9 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
                           </p>
                         )}
 
-                        <span className={`character-roster-block__status ${statusClass}`}>{statusLabel}</span>
+                        <span className={`character-roster-block__status ${statusClass}`}>
+                          {statusLabel}
+                        </span>
 
                         {bioField && (
                           <div className="character-roster-block__bio field-bio">

@@ -1,0 +1,34 @@
+﻿---
+ID: "48aec24b-7782-4566-bdab-7211becd3761"
+Parent: "5f614994-623c-47cb-9b0c-ba3920335576"
+Template: "3f459416-57a7-4066-970e-4b07f37f7ac5"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Footer/Footer SocialMedia/DEA
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T171743Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "6dbaaf68-8063-4755-ad20-2997ed509ae1"
+      Hint: platformlabel
+      Value: DEA
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a0bbf749-207a-4457-9da1-99b9ef4171cc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T172649Z

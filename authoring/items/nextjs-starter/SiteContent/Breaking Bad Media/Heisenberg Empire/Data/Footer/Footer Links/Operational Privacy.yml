@@ -1,0 +1,38 @@
+﻿---
+ID: "3f5f374e-ab50-474e-9f85-ff47c7579a0f"
+Parent: "0ee17dd3-a3db-4e43-b48e-f15b3053bbc9"
+Template: "68f5828d-a769-4c01-8a42-596753044289"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Footer/Footer Links/Operational Privacy
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T171612Z
+    - ID: "50eb51e6-8529-496c-881f-01e293fcb6e4"
+      Hint: linkurl
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E2BA7651-461C-4ABD-8080-C5E87EF9142A}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a95b1e84-a531-4ccc-92be-74c98d074e95"
+    - ID: "b1aa69c7-2485-4483-bf62-58960295f5d9"
+      Hint: linklabel
+      Value: Operational Privacy
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T172313Z

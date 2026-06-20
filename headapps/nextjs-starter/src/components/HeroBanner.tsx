@@ -40,7 +40,9 @@ const HeroBannerEmpty = (props: HeroBannerProps): JSX.Element => (
  * Layout Service may expose image fields under different casings depending on
  * template setup. Resolve the first populated ImageField we find.
  */
-const resolveBackgroundImageField = (fields: Fields & Record<string, unknown>): ImageField | undefined => {
+const resolveBackgroundImageField = (
+  fields: Fields & Record<string, unknown>
+): ImageField | undefined => {
   const candidates = [
     fields.backgroundimage,
     fields.backgroundImage,
@@ -62,9 +64,7 @@ const getBackgroundImageUrl = (imageField?: ImageField): string | undefined =>
   imageField?.value?.src || undefined;
 
 const getHeroWrapperStyle = (backgroundImageUrl?: string): CSSProperties => ({
-  ...(backgroundImageUrl
-    ? { backgroundImage: `url('${backgroundImageUrl}')` }
-    : {}),
+  ...(backgroundImageUrl ? { backgroundImage: `url('${backgroundImageUrl}')` } : {}),
 });
 
 export const Default = (props: HeroBannerProps): JSX.Element => {

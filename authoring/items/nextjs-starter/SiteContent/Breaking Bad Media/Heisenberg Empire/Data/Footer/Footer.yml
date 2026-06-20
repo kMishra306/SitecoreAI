@@ -1,0 +1,75 @@
+﻿---
+ID: "bdcc2292-f4ae-4f33-ba99-a33acbf69118"
+Parent: "a378e1e6-14fc-4fad-aaeb-6144b71ef1b9"
+Template: "2a24cfb4-0119-4130-a4b1-08b0f3839a04"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Footer/Footer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T171556Z
+    - ID: "35711bc4-09a4-4fa6-96e7-a209aebaf220"
+      Hint: disclaimertext
+      Value: Fictional entertainment site. Not affiliated with AMC or Netflix.
+    - ID: "3867e4be-db60-497e-8cd9-f170a741ff9f"
+      Hint: compliancetitle
+      Value: Regulatory Status
+    - ID: "3a12b473-af0e-4335-a2ad-63841484e668"
+      Hint: footerlinks
+      Value: |
+        {94A2E435-89E0-442D-9194-45CF3AFB885A}
+        {AD5A91FF-DC47-4DFF-8378-D6652A8B10C6}
+        {5049B3CE-DB28-4926-91E9-D7BCFED4DE14}
+        {46F4D86C-03E0-4C01-86E7-310AC79EAC05}
+        {DB561283-2292-4968-9D8A-501EB2B33FB1}
+        {3F5F374E-AB50-474E-9F85-FF47C7579A0F}
+    - ID: "463648fc-00e9-4a23-a0a7-58730a198feb"
+      Hint: contactphone
+      Value: "(505) 555-0187"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "7227276b-2fe7-4559-a1a2-ff975034b02c"
+      Hint: logotext
+      Value: "[Ma]drigal [El]ectromotive"
+    - ID: "780798ed-3e18-4dba-bd88-f7e0ad02b8f1"
+      Hint: contactlabel
+      Value: Secure Contact
+    - ID: "7c0f6c02-8c4d-40e6-b256-1b635d04f85e"
+      Hint: compliancemessage
+      Value: DEA monitoring inactive. All front companies operational.
+    - ID: "8c05b931-c7e6-4647-87c6-cf1f6a747766"
+      Hint: sociallinks
+      Value: |
+        {464A9074-F425-4388-B9FE-2C06B96AC950}
+        {48AEC24B-7782-4566-BDAB-7211BECD3761}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0f634c77-1bb5-4e72-a3ee-85a6b1aebf99"
+    - ID: "95468de8-7b05-4efa-ab31-75898cb961fb"
+      Hint: tagline
+      Value: Industrial ventilation & advanced chemistry since 1967.
+    - ID: "9730e37c-1a6e-47bd-bbf5-3ef7d0daebaf"
+      Hint: copyrighttext
+      Value: © 2026 Heisenberg Empire. All rights reserved.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T172728Z
+    - ID: "e3f80094-7f9d-41a3-991c-9fb4d32fe91f"
+      Hint: contactemail
+      Value: operations@madrigal.com
+    - ID: "f8015671-9452-41a2-ad8d-ca20b3827f3b"
+      Hint: compliancelevel
+      Value: Low 

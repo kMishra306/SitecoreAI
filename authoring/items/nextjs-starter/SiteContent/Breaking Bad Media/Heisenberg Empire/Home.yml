@@ -11,7 +11,7 @@ SharedFields:
     <image mediaid="{F4B77CC7-0C14-47AD-B13B-A69984AB6432}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "f99df2fc-6599-4c59-a976-9dddd3d9aeeb"
+  Value: "3cf9fb85-e92d-422f-8fd7-d804ddba7012"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -20,8 +20,15 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{4632FDC1-1754-429E-A1D2-62D0FC7CD66D}"
+          uid="{A6732D90-12E8-4999-84BB-A3BAC93FC087}"
           p:before="*"
+          s:ds="{8683E9A5-3259-4947-9D76-86F88DCF9CFB}"
+          s:id="{218EB949-D11E-4DF4-B540-97993C25CB60}"
+          s:par="CSSStyles"
+          s:ph="headless-header" />
+        <r
+          uid="{4632FDC1-1754-429E-A1D2-62D0FC7CD66D}"
+          p:after="r[@uid='{A6732D90-12E8-4999-84BB-A3BAC93FC087}']"
           s:ds="{44B6D2CB-12CA-4F38-899E-08B4A43E4B93}"
           s:id="{EF93B49E-CC60-4F27-9EC6-6365482BE3BD}"
           s:par="CSSStyles"
@@ -35,11 +42,18 @@ SharedFields:
           s:ph="headless-main" />
         <r
           uid="{DF0EB07C-1F96-420A-B09F-50424F83E871}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{28485D7E-756A-4EE2-B9BF-572AA8473228}']"
           s:ds="{70E2D303-1214-4C77-9A86-3D20E91A71D5}"
           s:id="{D41318BD-2FBE-4F43-B335-DB68F8D55C84}"
           s:par="CSSStyles"
           s:ph="headless-main" />
+        <r
+          uid="{2EEB4E41-CF62-4AED-9693-4500F830E47B}"
+          p:after="*[1=2]"
+          s:ds="{BDCC2292-F4AE-4F33-BA99-A33ACBF69118}"
+          s:id="{7E4F27D7-8441-4775-928E-7BB46B6BCA8B}"
+          s:par="CSSStyles"
+          s:ph="headless-footer" />
       </d>
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -66,7 +80,7 @@ Languages:
         sitecore\kmishra@horizontal.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b40eca55-c083-4c3b-bd7e-2f2756be20a5"
+      Value: "66a589c5-be87-441d-9045-2bed77b58f97"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -76,4 +90,4 @@ Languages:
       Value: Heisenberg Empire
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260620T125129Z
+      Value: 20260620T174148Z
