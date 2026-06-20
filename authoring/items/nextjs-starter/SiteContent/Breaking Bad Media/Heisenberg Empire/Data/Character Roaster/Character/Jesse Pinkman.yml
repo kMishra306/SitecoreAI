@@ -1,0 +1,39 @@
+﻿---
+ID: "9fa84e63-72c2-46fc-8d0d-b73414f59fae"
+Parent: "51b36f8d-a614-40b4-845b-e4da8826183b"
+Template: "ae5f2b0d-aedf-48fa-9ecb-44dcce38d8ba"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Character Roaster/Character/Jesse Pinkman
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10f1dc48-f2a1-47cd-bb17-525a4dfbadd2"
+      Hint: bio
+      Value: <p><strong>Jesse Pinkman</strong> is a central character in <strong>Breaking Bad</strong>, portrayed by <strong>Aaron Paul</strong>. Jesse begins the story as a young methamphetamine dealer with a rebellious attitude and a troubled lifestyle, but he gradually emerges as one of the show's most emotionally complex and sympathetic characters. Although he often acts impulsively and makes poor decisions, he possesses a compassionate nature and a strong sense of empathy that set him apart from many of the people around him. Throughout the series, Jesse struggles with guilt, loss, and the consequences of his involvement in the drug trade, leading to significant personal growth. His complicated partnership with Walter White shapes much of his journey, forcing him to confront difficult moral choices and emotional hardships. Jesse's vulnerability, humanity, and desire for redemption make him one of the most memorable and beloved characters in modern television.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T114818Z
+    - ID: "4a84be5e-d028-465c-8aa2-ec7c09c501e2"
+      Hint: alias
+      Value: Cap'n Cook
+    - ID: "6080141a-47b6-4efe-b80e-d0a49d7c99b1"
+      Hint: characterimage
+      Value: |
+        <image mediaid="{7B7C496E-C1D1-4DF3-A99D-75E8C7C72D9C}" />
+    - ID: "74c918f9-698e-46d8-bdfd-747b2e6135d8"
+      Hint: status
+      Value: Status=Active
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3eb81522-0163-40b9-9dd8-ac156cdbc5b9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T123633Z
+    - ID: "f079e9c7-a770-43d8-8d0b-0dcb36ea836a"
+      Hint: charactername
+      Value: Jesse Pinkman

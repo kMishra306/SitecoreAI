@@ -1,0 +1,39 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "nextjs-starter",
+  "items": {
+    "path": "nextjs-starter",
+    "includes": [
+      {
+        "name": "DefaultRenderingHost",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
+        "scope": "singleItem"
+      },
+      {
+        "name": "ProjectTemplates",
+        "path": "/sitecore/templates/Project/Breaking Bad Media",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "ProjectBranchTemplates",
+        "path": "/sitecore/templates/Branches/Project/Breaking Bad Media",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "ProjectRenderings",
+        "path": "/sitecore/layout/Renderings/Project/Breaking Bad Media",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "SiteContent",
+        "path": "/sitecore/content/Breaking Bad Media",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "ProjectMedia",
+        "path": "/sitecore/media library/Project/Breaking Bad Media",
+        "scope": "ItemAndDescendants"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+﻿---
+ID: "ed8be738-5857-40a2-9df9-8f8bc4aecb24"
+Parent: "170bda52-ce90-496b-aa30-25b1f738a0d6"
+Template: "170bda52-ce90-496b-aa30-25b1f738a0d6"
+Path: /sitecore/templates/Project/Breaking Bad Media/Headless Site/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T084853Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a59ce010-d349-4f10-979f-405f16ed2374"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T084853Z

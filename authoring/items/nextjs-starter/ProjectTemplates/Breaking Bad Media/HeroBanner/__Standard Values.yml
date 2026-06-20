@@ -1,0 +1,37 @@
+﻿---
+ID: "8758817c-51e6-4daf-8932-27a88290f048"
+Parent: "8356af5b-8843-481f-8e63-bacbe7b5aafa"
+Template: "8356af5b-8843-481f-8e63-bacbe7b5aafa"
+Path: /sitecore/templates/Project/Breaking Bad Media/HeroBanner/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "058e3ba2-7a94-4b35-b106-b7b50d3d1030"
+      Hint: subtitle
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T093029Z
+    - ID: "3bfa6edf-ce8d-48cb-8839-3b9a5569a316"
+      Hint: title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "44795192-bd05-44fe-bd0b-7498c434134b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T093054Z

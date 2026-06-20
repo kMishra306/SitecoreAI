@@ -1,0 +1,40 @@
+﻿---
+ID: "ec2cadd8-a6d4-4c3d-8222-41fac7849134"
+Parent: "51b36f8d-a614-40b4-845b-e4da8826183b"
+Template: "ae5f2b0d-aedf-48fa-9ecb-44dcce38d8ba"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Character Roaster/Character/Walter White
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10f1dc48-f2a1-47cd-bb17-525a4dfbadd2"
+      Hint: bio
+      Value: |
+        <strong data-start="369" data-end="410">Walter White</strong> is the central protagonist of <strong data-start="441" data-end="482">Breaking Bad</strong>, portrayed by <strong data-start="497" data-end="538">Bryan Cranston</strong>. At the beginning of the series, Walter is a mild-mannered high school chemistry teacher living in <strong data-start="638" data-end="679">Albuquerque</strong> who is diagnosed with lung cancer. Concerned about his family's financial future, he turns to manufacturing methamphetamine with former student Jesse Pinkman. As the story progresses, Walter undergoes a dramatic transformation from a struggling teacher into the feared drug kingpin known as Heisenberg. Highly intelligent, ambitious, and resourceful, he uses his scientific expertise to build a powerful criminal empire. However, his growing pride, desire for control, and willingness to manipulate others lead to devastating consequences for himself and those around him. Walter White's evolution is widely regarded as one of television's most compelling and complex character arcs.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T114818Z
+    - ID: "4a84be5e-d028-465c-8aa2-ec7c09c501e2"
+      Hint: alias
+      Value: Heisenberg
+    - ID: "6080141a-47b6-4efe-b80e-d0a49d7c99b1"
+      Hint: characterimage
+      Value: |
+        <image mediaid="{88023A6B-EF81-4E9D-9EEB-2F98C915D5F9}" />
+    - ID: "74c918f9-698e-46d8-bdfd-747b2e6135d8"
+      Hint: status
+      Value: Status=Active
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0d23253-79aa-47de-9b46-d7ab798d57e2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T123913Z
+    - ID: "f079e9c7-a770-43d8-8d0b-0dcb36ea836a"
+      Hint: charactername
+      Value: Walter White

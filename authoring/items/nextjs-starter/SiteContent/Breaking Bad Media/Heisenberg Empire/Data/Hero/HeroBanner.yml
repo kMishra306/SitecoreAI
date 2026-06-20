@@ -1,0 +1,41 @@
+﻿---
+ID: "44b6d2cb-12ca-4f38-899e-08b4a43e4b93"
+Parent: "773a3210-ccbe-49fd-b398-4fb4228b133e"
+Template: "8356af5b-8843-481f-8e63-bacbe7b5aafa"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Hero/HeroBanner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "058e3ba2-7a94-4b35-b106-b7b50d3d1030"
+      Hint: subtitle
+      Value: Say my name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T092634Z
+    - ID: "3bfa6edf-ce8d-48cb-8839-3b9a5569a316"
+      Hint: title
+      Value: I Am The One Who Knocks
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "59bc5dcb-e1f2-4300-884d-ebed3536339b"
+      Hint: backgroundimage
+      Value: |
+        <image mediaid="{2B75723D-E509-4638-8802-0E68AEE7F657}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b093f9e5-ca8f-4f37-8c31-ba4110badd79"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T093542Z

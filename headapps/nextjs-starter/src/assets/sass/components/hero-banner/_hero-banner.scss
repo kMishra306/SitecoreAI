@@ -1,0 +1,134 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+/**
+ * Hero Banner block styles (BEM root: .hero-banner-block)
+ *
+ * Uses a dedicated root class to avoid clashing with the Image component's
+ * legacy `.hero-banner` rules in assets/basic/_component.scss.
+ */
+.hero-banner-block {
+  width: 100%;
+  margin: 0;
+
+  > .component-content {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: clamp(280px, 55vw, 640px);
+    padding: clamp(48px, 8vw, 120px) clamp(16px, 4vw, 48px);
+    text-align: center;
+    color: $hero-banner-text-color;
+    background-color: $hero-banner-fallback-bg;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include respond-to(tablet) {
+      min-height: clamp(320px, 50vw, 520px);
+      padding: clamp(56px, 7vw, 96px) clamp(20px, 3vw, 40px);
+    }
+
+    @include respond-to(mobile-large) {
+      min-height: clamp(260px, 70vw, 420px);
+      padding: 48px 16px;
+    }
+
+    @include respond-to(mobile) {
+      min-height: 240px;
+      padding: 40px 12px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: $hero-banner-overlay-bg;
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 960px);
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
+  &__title {
+    margin: 0 0 clamp(12px, 2vw, 20px);
+    color: inherit;
+    line-height: 1.1;
+    word-break: break-word;
+    @include font-size(4.8);
+
+    @include respond-to(tablet) {
+      @include font-size(3.6);
+    }
+
+    @include respond-to(mobile-large) {
+      @include font-size(2.8);
+    }
+
+    @include respond-to(mobile) {
+      @include font-size(2.4);
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 clamp(20px, 3vw, 36px);
+    color: inherit;
+    line-height: 1.5;
+    word-break: break-word;
+    @include font-size(2.0);
+
+    @include respond-to(mobile-large) {
+      margin-bottom: 24px;
+      @include font-size(1.6);
+    }
+
+    @include respond-to(mobile) {
+      @include font-size(1.4);
+    }
+  }
+
+  &__cta {
+    margin-top: 8px;
+  }
+
+  &__cta-link {
+    @include default-link-button();
+    display: inline-block;
+    max-width: 100%;
+    padding-left: clamp(16px, 3vw, 28px);
+    padding-right: clamp(16px, 3vw, 28px);
+    background: $btn-green-light;
+    color: $text-white;
+    text-decoration: none;
+    border: none;
+    white-space: normal;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $text-white;
+      background: $btn-green;
+      text-decoration: none;
+    }
+  }
+
+  &.hero-banner-block--empty-image {
+    .hero-banner-block__wrapper {
+      background-color: $hero-banner-empty-bg;
+    }
+  }
+}

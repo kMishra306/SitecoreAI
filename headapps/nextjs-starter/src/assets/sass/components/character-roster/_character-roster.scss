@@ -1,0 +1,205 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+/**
+ * Character Roster — full-width column layout
+ *
+ * Each character spans the full content width in a horizontal card:
+ * wide image column on the left, details on the right.
+ */
+.character-roster-block {
+  width: 100%;
+  background-color: $character-roster-bg;
+  color: $character-roster-text;
+
+  > .component-content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(32px, 4vw, 56px) clamp(20px, 4vw, 48px);
+  }
+
+  &__heading {
+    width: 100%;
+    margin: 0 0 clamp(20px, 3vw, 32px);
+    padding-bottom: clamp(12px, 2vw, 20px);
+    border-bottom: 2px solid $character-roster-border;
+    color: $character-roster-heading;
+    line-height: 1.2;
+    word-break: break-word;
+    @include font-size(4.0);
+
+    @include respond-to(mobile-large) {
+      @include font-size(3.0);
+    }
+
+    @include respond-to(mobile) {
+      @include font-size(2.4);
+    }
+  }
+
+  &__empty-hint {
+    margin: 0;
+    padding: 24px;
+    border: 1px dashed $character-roster-border;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 2.5vw, 28px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__card {
+    width: 100%;
+    margin: 0;
+    min-width: 0;
+  }
+
+  &__card-inner {
+    display: grid;
+    grid-template-columns: minmax(240px, 36%) 1fr;
+    align-items: start;
+    width: 100%;
+    background-color: $character-roster-card-bg;
+    border: 1px solid $character-roster-border;
+    border-radius: 16px;
+    overflow: hidden;
+
+    @include respond-to(tablet) {
+      grid-template-columns: minmax(220px, 34%) 1fr;
+    }
+
+    @include respond-to(mobile-large) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__media {
+    position: relative;
+    width: 100%;
+    height: clamp(160px, 18vw, 220px);
+    max-height: 220px;
+    background-color: $character-roster-media-bg;
+    overflow: hidden;
+
+    @include respond-to(mobile-large) {
+      height: clamp(150px, 38vw, 200px);
+      max-height: 200px;
+    }
+  }
+
+  &__image,
+  &__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  &__image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      $character-roster-media-bg 0%,
+      darken($character-roster-media-bg, 8%) 100%
+    );
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: clamp(16px, 2vw, 24px) clamp(20px, 3vw, 32px);
+    min-width: 0;
+  }
+
+  &__name {
+    margin: 0 0 6px;
+    color: $character-roster-name;
+    line-height: 1.2;
+    word-break: break-word;
+    @include font-size(2.4);
+
+    @include respond-to(mobile-large) {
+      @include font-size(2.0);
+    }
+
+    @include respond-to(mobile) {
+      @include font-size(1.8);
+    }
+  }
+
+  &__alias {
+    margin: 0 0 12px;
+    color: $character-roster-alias;
+    font-style: italic;
+    line-height: 1.4;
+    word-break: break-word;
+    @include font-size(1.4);
+  }
+
+  &__status {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: $text-black;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @include font-size(1.2);
+
+    &--active {
+      background-color: $character-roster-status-active;
+    }
+
+    &--deceased {
+      background-color: $character-roster-status-deceased;
+    }
+
+    &--unknown {
+      background-color: $character-roster-status-unknown;
+    }
+  }
+
+  &__bio {
+    color: $character-roster-bio;
+    line-height: 1.55;
+    word-break: break-word;
+    @include font-size(1.5);
+
+    @include respond-to(mobile) {
+      @include font-size(1.4);
+    }
+
+    p {
+      margin: 0 0 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      color: $character-roster-name;
+    }
+  }
+}

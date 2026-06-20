@@ -1,0 +1,36 @@
+﻿---
+ID: "7ac31f5b-047e-4f0f-a0a1-c1bf3ddbe9cc"
+Parent: "0bc90712-9476-4466-b5b1-a076180c130a"
+Template: "65854c8f-f8dd-4abe-b7ae-1d3f5f787ac8"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Character Roaster/Walter white CharacterRoaster
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "245c03e2-9058-428f-93b0-2a4656a8d523"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260620T122904Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b1cdeafc-7054-4682-8250-4ad51e2031ae"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260620T123752Z
+    - ID: "ee9b0c4f-20ff-4eb2-96e8-72cbc8bffefb"
+      Hint: Characters
+      Value: "{EC2CADD8-A6D4-4C3D-8222-41FAC7849134}"
+    - ID: "f4dc1ca6-e62e-4138-99fa-8f179545a14a"
+      Hint: Heading
+      Value: The Cook
