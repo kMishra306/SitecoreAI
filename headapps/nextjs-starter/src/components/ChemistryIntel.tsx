@@ -76,6 +76,7 @@ export const Default = (props: ChemistryIntelProps): JSX.Element => {
   const featuredImage = pickField<ImageField>(resolved, ['featuredimage', 'FeaturedImage']);
 
   const compoundTitle = fieldValue(compoundName) || 'Chemistry Intel';
+  const pageItemId = sitecoreContext.route?.itemId;
   const rootClassName = ['component', 'chemistry-intel-block', styleParams]
     .filter(Boolean)
     .join(' ');
@@ -85,7 +86,9 @@ export const Default = (props: ChemistryIntelProps): JSX.Element => {
       <Head>
         <title>{compoundTitle}</title>
         <meta name="description" content={fieldValue(shortSummary)} />
-        <meta property="og:title" content={compoundTitle} />
+        <meta key="og:type" property="og:type" content="chemistry_intel" />
+        <meta key="og:title" property="og:title" content={compoundTitle} />
+        {pageItemId ? <meta key="og:id" property="og:id" content={pageItemId} /> : null}
         <meta name="chemistry:name" content={fieldValue(compoundName)} />
         <meta name="chemistry:common_name" content={fieldValue(commonName)} />
         <meta name="chemistry:formula" content={fieldValue(chemicalFormula)} />
