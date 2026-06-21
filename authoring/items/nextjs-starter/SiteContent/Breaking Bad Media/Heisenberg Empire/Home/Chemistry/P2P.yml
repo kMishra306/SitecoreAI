@@ -1,0 +1,40 @@
+﻿---
+ID: "810df816-47d7-4564-8510-337f9a9d50f7"
+Parent: "d5a49cdc-a064-4fdc-be4b-0248309188f4"
+Template: "d13246f4-8f2b-4257-81de-7e964b52eeac"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Home/Chemistry/P2P
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{CC64D99D-5158-4FC5-8105-B0AD78E27DDA}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "dccf1a89-4949-4882-9f26-a62c3e5797f9"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260621T111339Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: P2P
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2d238e5a-1cae-42b9-a724-7c1dcfaf7088"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "ce64de4d-313d-458d-b851-a54c8a7fe5b7"
+      Hint: Title
+      Value: P2P
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260621T111349Z

@@ -1,0 +1,34 @@
+﻿---
+ID: "6b7dda9d-a679-474c-945a-a0f839fbb533"
+Parent: "d5a49cdc-a064-4fdc-be4b-0248309188f4"
+Template: "d13246f4-8f2b-4257-81de-7e964b52eeac"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Home/Chemistry/Calcium Carbonate
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{715F6809-E30E-4028-9A86-09258DB6FA45}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260621T111740Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Ventilation Safety Protocol
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b1404052-e4f0-43fa-986e-6d89703729f5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "ce64de4d-313d-458d-b851-a54c8a7fe5b7"
+      Hint: Title
+      Value: Calcium Carbonate
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260621T113814Z
