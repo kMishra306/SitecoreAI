@@ -1,0 +1,120 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.chemistry-intel-block {
+  width: 100%;
+  background-color: $chemistry-intel-bg;
+  color: $chemistry-intel-text;
+
+  > .component-content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: clamp(32px, 4vw, 56px) clamp(20px, 4vw, 48px);
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: clamp(24px, 3vw, 32px);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($chemistry-intel-border, 0.35);
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    color: $chemistry-intel-text;
+    @include font-size(4.0);
+  }
+
+  &__common-name {
+    margin: 0;
+    color: $chemistry-intel-muted;
+    @include font-size(1.8);
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: $chemistry-intel-badge-bg;
+    color: $chemistry-intel-text;
+    @include font-size(1.2);
+
+    &--hazard {
+      color: $chemistry-intel-hazard;
+    }
+
+    &--purity {
+      color: $chemistry-intel-purity;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: clamp(20px, 3vw, 32px);
+
+    @include respond-to(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__media img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba($chemistry-intel-border, 0.35);
+  }
+
+  &__formula-card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border: 1px solid rgba($chemistry-intel-border, 0.35);
+    border-radius: 6px;
+    background: $chemistry-intel-formula-bg;
+  }
+
+  &__formula-label {
+    color: $chemistry-intel-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    @include font-size(1.0);
+  }
+
+  &__formula-value {
+    color: $chemistry-intel-purity;
+    font-family: monospace;
+    @include font-size(2.0);
+  }
+
+  &__summary {
+    margin: 0 0 16px;
+    color: $chemistry-intel-muted;
+    line-height: 1.6;
+    @include font-size(1.6);
+  }
+
+  &__description {
+    color: $chemistry-intel-text;
+    line-height: 1.7;
+    @include font-size(1.5);
+  }
+}

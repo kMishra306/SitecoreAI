@@ -1,7 +1,37 @@
 const jssConfig = require('./src/temp/config');
 const plugins = require('./src/temp/next-config-plugins') || {};
 
-const publicUrl = jssConfig.publicUrl;
+const isPlaceholderPublicUrl = (value) => {
+  if (!value) {
+    return true;
+  }
+
+  return value === 'http://localhost:3000' || value.includes('.localhost');
+};
+
+const resolvePublicUrl = () => {
+  const configuredUrl = jssConfig.publicUrl?.replace(/\/$/, '');
+
+  if (!isPlaceholderPublicUrl(configuredUrl)) {
+    return configuredUrl;
+  }
+
+  if (process.env.PUBLIC_URL) {
+    return process.env.PUBLIC_URL.replace(/\/$/, '');
+  }
+
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+
+  return configuredUrl || '';
+};
+
+const publicUrl = resolvePublicUrl();
 
 const getHostname = (value) => {
   if (!value) {

@@ -1,0 +1,65 @@
+﻿---
+ID: "27e809d8-3a29-4567-9c8f-c15162e0e501"
+Parent: "9b1ce7f3-2003-4df6-aeb2-b07cbe68bbd3"
+Template: "ebb17b42-aebf-429b-9ebd-f415a56e98a7"
+Path: /sitecore/content/Breaking Bad Media/Heisenberg Empire/Data/Chemistry/Sodium Chloride
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8e432b2c-1f2f-454d-8c58-803ab20b1bf6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "00044f3f-e355-4912-90d1-bfbbde56a6c4"
+      Hint: category
+      Value: Compound
+    - ID: "119e2d67-a218-41d2-ab26-4df816a95acd"
+      Hint: commonname
+      Value: Table Salt
+    - ID: "11b14f64-76d1-4706-834e-67c4f1f3af56"
+      Hint: shortsummary
+      Value: Common inorganic compound used in laboratories and industries.
+    - ID: "23eff778-8a9f-4912-98d9-a5101d00fe3b"
+      Hint: hazardlevel
+      Value: Low
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260621T110155Z
+    - ID: "41a33e55-6be1-452e-8c1b-d468af5c5d94"
+      Hint: searchkeywords
+      Value: salt, sodium chloride, NaCl, food chemical
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "6425ac57-f276-4009-83b9-ad7130ed14c0"
+      Hint: fulldescription
+      Value: Sodium Chloride is a crystalline compound widely used in chemical processes, food applications, and laboratory experiments. It has high stability and dissolves easily in water.
+    - ID: "6d1df237-4fa0-416b-a8dd-34a319fb6743"
+      Hint: chemicalformula
+      Value: NaCl
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2f2ab7ce-3b0c-46d8-a99e-e26e0133b2d7"
+    - ID: "aaf55b66-5496-4de8-a7eb-fc22b981d6cc"
+      Hint: puritygrade
+      Value: Analytical Grade
+    - ID: "b8df8a7a-fa2b-4063-9728-2a85f5e0ba1f"
+      Hint: compoundname
+      Value: Sodium Chloride
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kmishra@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260621T112419Z

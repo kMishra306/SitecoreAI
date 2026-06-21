@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { CSSProperties, JSX, useState } from 'react';
 import {
   Field,
@@ -6,6 +7,11 @@ import {
   Text,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import { isSearchConfigured } from 'lib/search/config';
+
+const SearchOverlay = dynamic(() => import('src/search/SearchOverlay'), {
+  ssr: false,
+});
 
 /**
  * Sitecore datasource fields for the Header template (Breaking Bad / Heisenberg Empire).
@@ -150,6 +156,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
   const { fields, params } = props;
   const { sitecoreContext } = useSitecoreContext();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchEnabled = isSearchConfigured();
   const renderingId = params?.RenderingIdentifier;
   const styleParams = params?.styles ?? '';
 
@@ -274,6 +282,19 @@ export const Default = (props: HeaderProps): JSX.Element => {
           </div>
 
           <div className="header-block__right">
+            {searchEnabled && (
+              <button
+                type="button"
+                className="header-block__search-toggle"
+                aria-expanded={searchOpen}
+                aria-controls="header-chemistry-search"
+                aria-label="Open chemistry search"
+                onClick={() => setSearchOpen(true)}
+              >
+                <span className="header-block__search-icon" aria-hidden="true" />
+              </button>
+            )}
+
             <div className={`header-block__threat ${threatMeta.modifier}`}>
               <span
                 className={`header-block__threat-dot ${
@@ -299,6 +320,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
           </div>
         </div>
       </div>
+
+      {searchEnabled && <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />}
     </div>
   );
 };
