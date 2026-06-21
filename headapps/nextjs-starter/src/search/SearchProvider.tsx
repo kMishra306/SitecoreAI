@@ -1,4 +1,4 @@
-import { JSX, ReactNode, useEffect } from 'react';
+import { JSX, ReactNode, useEffect, useState } from 'react';
 import { PageController, WidgetsProvider } from '@sitecore-search/react';
 import { getSearchConfig, isSearchConfigured } from 'lib/search/config';
 
@@ -7,7 +7,11 @@ type SearchProviderProps = {
 };
 
 const SearchProvider = ({ children }: SearchProviderProps): JSX.Element => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    setIsClient(true);
+
     if (!isSearchConfigured()) {
       return;
     }
@@ -16,7 +20,7 @@ const SearchProvider = ({ children }: SearchProviderProps): JSX.Element => {
     PageController.getContext().setLocaleCountry('us');
   }, []);
 
-  if (!isSearchConfigured()) {
+  if (!isSearchConfigured() || !isClient) {
     return <>{children}</>;
   }
 

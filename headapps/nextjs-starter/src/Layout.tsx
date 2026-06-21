@@ -57,9 +57,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={fields?.Title?.value?.toString() || pageTitle} />
-        <meta property="og:type" content="website_content" />
-        <meta property="og:title" content={pageTitle} />
-        {pageItemId ? <meta property="og:id" content={pageItemId} /> : null}
+        <meta key="og:type" property="og:type" content="website_content" />
+        <meta key="og:title" property="og:title" content={pageTitle} />
+        {pageItemId ? <meta key="og:id" property="og:id" content={pageItemId} /> : null}
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
