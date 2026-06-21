@@ -13,6 +13,7 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import Scripts from 'src/Scripts';
+import { getPageItemId, getPageTitle } from 'lib/search/page-meta';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -33,6 +34,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
+  const pageTitle = getPageTitle(layoutData);
+  const pageItemId = getPageItemId(layoutData);
 
   const renderContent = () => (
     <>
@@ -52,7 +55,11 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
     <>
       <Scripts />
       <Head>
-        <title>{fields?.Title?.value?.toString() || 'Page'}</title>
+        <title>{pageTitle}</title>
+        <meta name="description" content={fields?.Title?.value?.toString() || pageTitle} />
+        <meta property="og:type" content="website_content" />
+        <meta property="og:title" content={pageTitle} />
+        {pageItemId ? <meta property="og:id" content={pageItemId} /> : null}
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
