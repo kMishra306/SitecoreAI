@@ -3,8 +3,11 @@
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "config": {
-    "appName": "nextjs-starter",
+    "appName": "nextjs-starter",    
     "rootPlaceholders": [
       "jss-main"
     ],
