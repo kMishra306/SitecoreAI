@@ -71,7 +71,16 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
+    <Content Include="App_Config\Include\Sitecore.Custom.RTE.config">
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\src\assets\css\rte-custom.css">
+      <Link>assets\css\rte-custom.css</Link>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="sitecore\shell\Controls\Rich Text Editor\ToolsFile.xml">
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,31 @@
+/* Sitecore RTE: load default CM styles, then project-specific classes */
+@import url("/default.css");
+
+.rte-highlight {    background: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.rte-info-box {
+    border-left: 5px solid #0078d4;
+    padding: 15px;
+    background: #f5f5f5;
+}
+
+
+.rte-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a.rte-link-primary {
+    color: #0078d4;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a.rte-link-secondary {
+    color: #605e5c;
+    text-decoration: none;
+}
