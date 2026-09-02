@@ -2,6 +2,8 @@ import { JSX } from 'react';
 import {
   Field,
   ImageField,
+  LinkField,
+  Link as JssLink,
   NextImage as JssImage,
   RichText as JssRichText,
   Text,
@@ -9,23 +11,27 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface CharacterFields {
-  charactername: Field<string>;
-  alias: Field<string>;
-  characterimage: ImageField;
-  bio: Field<string>;
-  status: Field<string>;
+  charactername?: Field<string>;
+  alias?: Field<string>;
+  characterimage?: ImageField;
+  bio?: Field<string>;
+  status?: Field<string>;
+  cta1?: LinkField;
+  cta2?: LinkField;
+  [key: string]: unknown;
 }
 
 interface CharacterItem {
   id: string;
   name?: string;
   displayName?: string;
-  fields: CharacterFields & Record<string, unknown>;
+  fields: CharacterFields;
 }
 
 interface Fields {
-  Heading: Field<string>;
-  Characters: CharacterItem[];
+  Heading?: Field<string>;
+  Characters?: CharacterItem[];
+  [key: string]: unknown;
 }
 
 type CharacterRoasterProps = {
@@ -43,12 +49,12 @@ const pickField = <T,>(source: Record<string, unknown>, keys: string[]): T | und
   return undefined;
 };
 
-const resolveCharacters = (fields: Fields & Record<string, unknown>): CharacterItem[] => {
-  const characters = fields.Characters ?? fields.characters;
+const resolveCharacters = (fields: Fields): CharacterItem[] => {
+  const characters = pickField<CharacterItem[]>(fields, ['Characters', 'characters']);
   return Array.isArray(characters) ? characters : [];
 };
 
-const resolveHeadingField = (fields: Fields & Record<string, unknown>): Field<string> | undefined =>
+const resolveHeadingField = (fields: Fields): Field<string> | undefined =>
   pickField<Field<string>>(fields, ['Heading', 'heading']);
 
 const CharacterRoasterEmpty = (props: CharacterRoasterProps): JSX.Element => (
@@ -125,9 +131,8 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
     return <CharacterRoasterEmpty {...props} />;
   }
 
-  const resolvedFields = fields as Fields & Record<string, unknown>;
-  const headingField = resolveHeadingField(resolvedFields);
-  const characters = resolveCharacters(resolvedFields);
+  const headingField = resolveHeadingField(fields);
+  const characters = resolveCharacters(fields);
   const isEditing = sitecoreContext.pageEditing;
 
   if (!characters.length && !isEditing) {
@@ -162,17 +167,34 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
           ) : (
             <ul className="character-roster-block__list" role="list">
               {characters.map((character) => {
-                const characterFields = character.fields;
+                const characterFields = character.fields || {};
                 const nameField = pickField<Field<string>>(characterFields, [
                   'charactername',
                   'CharacterName',
+                  'Charactername',
                 ]);
                 const aliasField = pickField<Field<string>>(characterFields, ['alias', 'Alias']);
                 const imageField = getWideImageField(
-                  pickField<ImageField>(characterFields, ['characterimage', 'CharacterImage'])
+                  pickField<ImageField>(characterFields, [
+                    'characterimage',
+                    'CharacterImage',
+                    'Characterimage',
+                  ])
                 );
                 const bioField = pickField<Field<string>>(characterFields, ['bio', 'Bio']);
                 const statusField = pickField<Field<string>>(characterFields, ['status', 'Status']);
+                const cta1Field = pickField<LinkField>(characterFields, [
+                  'cta1',
+                  'CTA1',
+                  'Cta1',
+                  'CTA 1',
+                ]);
+                const cta2Field = pickField<LinkField>(characterFields, [
+                  'cta2',
+                  'CTA2',
+                  'Cta2',
+                  'CTA 2',
+                ]);
                 const statusLabel = parseStatusValue(statusField?.value);
                 const statusClass = getStatusModifier(statusLabel);
 
@@ -210,6 +232,23 @@ export const Default = (props: CharacterRoasterProps): JSX.Element => {
                         {bioField && (
                           <div className="character-roster-block__bio field-bio">
                             <JssRichText field={bioField} />
+                          </div>
+                        )}
+
+                        {(cta1Field || cta2Field) && (
+                          <div className="character-roster-block__cta">
+                            {cta1Field && (
+                              <JssLink
+                                field={cta1Field}
+                                className="character-roster-block__button"
+                              />
+                            )}
+                            {cta2Field && (
+                              <JssLink
+                                field={cta2Field}
+                                className="character-roster-block__button"
+                              />
+                            )}
                           </div>
                         )}
                       </div>
